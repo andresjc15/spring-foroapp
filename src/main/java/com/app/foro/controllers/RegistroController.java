@@ -84,7 +84,7 @@ public class RegistroController {
 			
 			//Carrera newCarrera = carreraService.findById(perfil.getCarrera().getId());
 			
-			perfil.setCarrera(carreraService.findById(perfil.getCarrera().getId()).get());
+			//perfil.setCarrera(carreraService.findById(perfil.getCarrera().getId()).get());
 			
 			Perfil newPerfil = perfilService.save(perfil);
 			

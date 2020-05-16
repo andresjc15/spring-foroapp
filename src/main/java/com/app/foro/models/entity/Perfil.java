@@ -56,7 +56,6 @@ public class Perfil {
 	@Column(length = 60)
 	private String direccion;
 	
-	@NotNull
 	@Column(length = 30)
 	private String genero;
 	

@@ -26,7 +26,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		.antMatchers("/api/categorias/**").permitAll()
 		.antMatchers("/api/register").permitAll()
 		.antMatchers("/api/publicaciones/**").permitAll()
-		.antMatchers("/api/perfiles/**").permitAll()
+		.antMatchers(HttpMethod.POST,"/api/perfiles/**").permitAll()
+		//.anyRequest().permitAll()
 		.anyRequest().authenticated()
 		.and().cors().configurationSource(corsConfigurationSource());
 	}
